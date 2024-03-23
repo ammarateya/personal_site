@@ -1,20 +1,20 @@
 body {
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-image: url("background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    color: #2a0f00;
+    color: antiquewhite;
   }
   
   .nav-link {
-    color: #2a0f00;
+    color: #e9f4ff;
     font-size: 1.5em;
   }
   .nav-link:hover {
     cursor: pointer;
-    color: #f75f2c;
+    color: #e56fff;
   }
   
   .experience-title {
@@ -42,8 +42,9 @@ body {
   }
   
   .img-container {
-    width: 400px; /* Adjust width as needed */
-    height: 400px; /* Set the height to match the width to maintain aspect ratio for a circular avatar */
+    max-width: 400px; /* Set maximum width for the avatar container */
+    width: 100%; /* Ensure the avatar container fills its parent */
+    height: auto; /* Height will scale to maintain aspect ratio */
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
@@ -51,17 +52,17 @@ body {
 }
 
 .avatar {
-    width: 100%; /* Ensure the avatar fills the container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure the avatar image doesn't exceed the container width */
+    height: auto; /* Height will scale to maintain aspect ratio */
     border-radius: 50%; /* Ensure the avatar is circular */
 }
   
   .intro {
-    color: #2a0f00;
+    color: #e6e6e6;
   }
   .intro a {
     font-style: italic;
-    color: #842e00;
+    color:burlywood;
     text-underline-offset: 3px;
   }
   
@@ -81,7 +82,7 @@ body {
   
   #typing-text span {
     font-style: italic;
-    color: #f93986;
+    color: #ff6ea8;
   }
   
   footer {
