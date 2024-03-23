@@ -1,141 +1,143 @@
 body {
-    font-family: "Montserrat", sans-serif;
-    background-image: url("background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    color: antiquewhite;
-  }
-  
-  .nav-link {
-    color: #e9f4ff;
-    font-size: 1.5em;
-  }
-  .nav-link:hover {
-    cursor: pointer;
-    color: #e56fff;
-  }
-  
-  .experience-title {
-    color: #ff9cc3;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 1.8vw;
-  }
-  
-  .experience-skills {
-    color: #ed72a3;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 1.3vw;
-    text-align: right;
-  }
-  
-  #avatar-section {
-    padding-top: 4em;
-    align-items: center;
-  }
-  #name {
-    font-weight: 700;
-    padding-bottom: 0.25em;
-  }
-  
-  .img-container {
-    max-width: 400px; /* Set maximum width for the avatar container */
-    width: 100%; /* Ensure the avatar container fills its parent */
-    height: auto; /* Height will scale to maintain aspect ratio */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    pointer-events: none;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: antiquewhite;
+}
+
+.nav {
+  flex: row;
+}
+
+.nav-link {
+  color: #e9f4ff;
+  font-size: 1.5em;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  color: #e56fff;
+}
+
+.experience-title {
+  color: #ff9cc3;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.8vw;
+}
+
+.experience-skills {
+  color: #ed72a3;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.3vw;
+  text-align: right;
+}
+
+#avatar-section {
+  padding-top: 4em;
+  align-items: center;
+}
+#name {
+  font-weight: 700;
+  padding-bottom: 0.25em;
+}
+
+.img-container {
+  width: 200px; /* Ensure the avatar container fills its parent */
+  height: 200px; /* Height will scale to maintain aspect ratio */
+  align-items: center; /* Center vertically */
+  justify-content: center;
 }
 
 .avatar {
-    max-width: 100%; /* Ensure the avatar image doesn't exceed the container width */
-    height: auto; /* Height will scale to maintain aspect ratio */
-    border-radius: 50%; /* Ensure the avatar is circular */
+  max-width: 80%; /* Ensure the avatar image doesn't exceed the container width */
+  align-self: auto;
+  height: auto; /* Height will scale to maintain aspect ratio */
+  border-radius: 100px; /* Ensure the avatar is circular */
 }
-  
-  .intro {
-    color: #e6e6e6;
+
+.intro {
+  color: #e6e6e6;
+}
+.intro a {
+  font-style: italic;
+  color:burlywood;
+  text-underline-offset: 3px;
+}
+
+.break {
+  padding-top: 12em;
+}
+.break2 {
+  padding-top: 6em;
+}
+
+.section {
+  font-weight: 600;
+}
+.intro-text {
+  font-weight: 500;
+}
+
+#typing-text span {
+  font-style: italic;
+  color: #ff6ea8;
+}
+
+footer {
+  color: #ffc1da;
+  font-weight: 400;
+  text-align: center;
+  font-size: small;
+}
+
+@media (max-width: 992.98px) {
+  .img-container {
+    height: 20vw;
+    width: 20vw;
   }
-  .intro a {
-    font-style: italic;
-    color:burlywood;
-    text-underline-offset: 3px;
+  #name {
+    font-size: 2.3vw;
   }
-  
-  .break {
-    padding-top: 12em;
-  }
-  .break2 {
-    padding-top: 6em;
-  }
-  
   .section {
-    font-weight: 600;
+    font-size: 2.3vw;
   }
   .intro-text {
-    font-weight: 500;
+    font-size: 2vw;
   }
-  
-  #typing-text span {
-    font-style: italic;
-    color: #ff6ea8;
+}
+
+@media (max-width: 575.98px) {
+  .img-container {
+    height: 50vw;
+    width: 50vw;
   }
-  
-  footer {
-    color: #ffc1da;
-    font-weight: 400;
-    text-align: center;
-    font-size: small;
+  #name {
+    align-self: center;
+    font-size: 4.5vw;
   }
-  
-  @media (max-width: 992.98px) {
-    .img-container {
-      height: 20vw;
-      width: 20vw;
-    }
-    #name {
-      font-size: 2.3vw;
-    }
-    .section {
-      font-size: 2.3vw;
-    }
-    .intro-text {
-      font-size: 2vw;
-    }
+
+  .break {
+    padding-top: 10em;
   }
-  
-  @media (max-width: 575.98px) {
-    .img-container {
-      height: 50vw;
-      width: 50vw;
-    }
-    #name {
-      align-self: center;
-      font-size: 4.5vw;
-    }
-  
-    .break {
-      padding-top: 10em;
-    }
-  
-    .intro-text {
-      align-self: center;
-      font-size: 3.5vw;
-    }
-  
-    .intro {
-      font-size: 3.5vw;
-      text-align: end;
-    }
-    #avatar-section {
-      flex-direction: column-reverse;
-    }
-    .avatar-text {
-      padding-top: 3em;
-    }
+
+  .intro-text {
+    align-self: center;
+    font-size: 3.5vw;
   }
-  
+
+  .intro {
+    font-size: 3.5vw;
+    text-align: end;
+  }
+  #avatar-section {
+    flex-direction: column-reverse;
+  }
+  .avatar-text {
+    padding-top: 3em;
+  }
+}
