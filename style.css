@@ -1,0 +1,140 @@
+body {
+    font-family: "Times New Roman", sans-serif;
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #2a0f00;
+  }
+  
+  .nav-link {
+    color: #2a0f00;
+    font-size: 1.5em;
+  }
+  .nav-link:hover {
+    cursor: pointer;
+    color: #f75f2c;
+  }
+  
+  .experience-title {
+    color: #ff9cc3;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.8vw;
+  }
+  
+  .experience-skills {
+    color: #ed72a3;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.3vw;
+    text-align: right;
+  }
+  
+  #avatar-section {
+    padding-top: 4em;
+    align-items: center;
+  }
+  #name {
+    font-weight: 700;
+    padding-bottom: 0.25em;
+  }
+  
+  .img-container {
+    width: 400px; /* Adjust width as needed */
+    height: 400px; /* Set the height to match the width to maintain aspect ratio for a circular avatar */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    pointer-events: none;
+}
+
+.avatar {
+    width: 100%; /* Ensure the avatar fills the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Ensure the avatar is circular */
+}
+  
+  .intro {
+    color: #2a0f00;
+  }
+  .intro a {
+    font-style: italic;
+    color: #842e00;
+    text-underline-offset: 3px;
+  }
+  
+  .break {
+    padding-top: 12em;
+  }
+  .break2 {
+    padding-top: 6em;
+  }
+  
+  .section {
+    font-weight: 600;
+  }
+  .intro-text {
+    font-weight: 500;
+  }
+  
+  #typing-text span {
+    font-style: italic;
+    color: #f93986;
+  }
+  
+  footer {
+    color: #ffc1da;
+    font-weight: 400;
+    text-align: center;
+    font-size: small;
+  }
+  
+  @media (max-width: 992.98px) {
+    .img-container {
+      height: 20vw;
+      width: 20vw;
+    }
+    #name {
+      font-size: 2.3vw;
+    }
+    .section {
+      font-size: 2.3vw;
+    }
+    .intro-text {
+      font-size: 2vw;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .img-container {
+      height: 50vw;
+      width: 50vw;
+    }
+    #name {
+      align-self: center;
+      font-size: 4.5vw;
+    }
+  
+    .break {
+      padding-top: 10em;
+    }
+  
+    .intro-text {
+      align-self: center;
+      font-size: 3.5vw;
+    }
+  
+    .intro {
+      font-size: 3.5vw;
+      text-align: end;
+    }
+    #avatar-section {
+      flex-direction: column-reverse;
+    }
+    .avatar-text {
+      padding-top: 3em;
+    }
+  }
+  
