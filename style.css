@@ -54,10 +54,10 @@ body {
 }
 
 .avatar {
-  max-width: 80%; /* Ensure the avatar image doesn't exceed the container width */
+  max-width: 80%; 
   align-self: auto;
-  height: auto; /* Height will scale to maintain aspect ratio */
-  border-radius: 100px; /* Ensure the avatar is circular */
+  height: auto; 
+  border-radius: 100px; 
 }
 
 .intro {
