@@ -1,10 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
-  background-image: url("background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background: #23272f; /* solid gray background */
   color: antiquewhite;
 }
 
@@ -244,6 +240,47 @@ footer {
   .project-category h3 {
     font-size: 1.25rem;
   }
+
+  .content {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  main.align-self-center {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  #avatar-section {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .avatar-text {
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .img-container {
+    width: 200px !important;
+    margin: 1rem auto 0 auto !important;
+  }
+  .break {
+    margin: 1.5rem 0 !important;
+  }
+  .projects-section {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+  .project-grid {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+  .project-category {
+    width: 100% !important;
+  }
+  .project-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    margin-bottom: 1rem !important;
+  }
 }
 
 @media (min-width: 769px) {
@@ -316,6 +353,13 @@ footer {
 .more-projects-card:hover .cta-link {
   opacity: 1;
 }
+
+.project-card {
+  max-width: 100%;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
 .intro a {
   text-decoration: none;
   transition: transform 0.2s ease;
