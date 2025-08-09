@@ -1,3 +1,4 @@
 node_modules/
 *.psd
 .env
+.DS_STORE
