@@ -69,174 +69,230 @@
       </header>
 
       <main class="align-self-center py-5 w-60 h-75">
-        <!--Avatar section-->
-        <div
-          class="justify-content-between d-flex h-100 w-100"
-          id="avatar-section"
-        >
-          <div class="avatar-text d-flex flex-column">
-            <h1 id="name">
-              <span style="white-space: nowrap">ammar ateya</span>
-            </h1>
-            <div class="d-flex justify-content-between align-items-center">
-              <h4 style="margin-right: auto">[ˈʕamˌmaːr ʕ*ɑtˤtˤejjæ]</h4>
-            </div>
-            <h2 class="intro-text" id="typing-text">
-              currently a <span class="typing"></span>
-            </h2>
-            <h2 class="intro-text">cs & linguistics @ umich</h2>
-          </div>
-          <!--Profile picture-->
-          <div
-            class="img-container d-flex"
-            style="width: 400px; flex-basis: auto; pointer-events: none"
+        <!-- ASCII name banner -->
+        <section id="ascii-name" class="mb-4">
+          <pre>
+          __  __   ___    __  __   ___                                                       __.....__                          
+         |  |/  `.'   `. |  |/  `.'   `.                                                 .-''         '. .-.          .-        
+         |   .-.  .-.   '|   .-.  .-.   '          .-,.--.                         .|   /     .-''"'-.  `.\ \        / /        
+    __   |  |  |  |  |  ||  |  |  |  |  |    __    |  .-. |              __      .' |_ /     /________\   \\ \      / /  __     
+ .:--.'. |  |  |  |  |  ||  |  |  |  |  | .:--.'.  | |  | |           .:--.'.  .'     ||                  | \ \    / /.:--.'.   
+/ |   \ ||  |  |  |  |  ||  |  |  |  |  |/ |   \ | | |  | |          / |   \ |'--.  .-'\    .-------------'  \ \  / // |   \ |  
+`" __ | ||  |  |  |  |  ||  |  |  |  |  |`" __ | | | |  '-           `" __ | |   |  |   \    '-.____...---.   \ `  / `" __ | |  
+ .'.''| ||__|  |__|  |__||__|  |__|  |__| .'.''| | | |                .'.''| |   |  |    `.             .'     \  /   .'.''| |  
+/ /   | |_                               / /   | |_| |               / /   | |_  |  '.'    `''-...... -'       / /   / /   | |_ 
+\ \._,\ '/                               \ \._,\ '/|_|               \ \._,\ '/  |   /                     |`-' /    \ \._,\ '/ 
+ `--'  `"                                 `--'  `"                    `--'  `"   `'-'                       '..'      `--'  `"  
+          </pre>
+        </section>
+        <!-- ASCII separator -->
+        <section class="ascii-sep" aria-hidden="true">
+          <pre>
++----------------------------------------------------------------------------------------------+</pre
           >
-            <img class="avatar" src="avatar.png" />
+        </section>
+        <!-- Dictionary-style preview -->
+        <section id="dictionary-preview" class="mb-5">
+          <div class="mb-3">
+            <img src="bay.jpeg" alt="Bay Area" class="avatar-dict" />
           </div>
-        </div>
-
-        <!--Break between avatar section and introduction-->
-        <div class="break"></div>
-
-        <!--Short intro-->
-        <div>
-          <h4 class="intro p-2">i study cs, linguistics, and math @ umich</h4>
-          <h4 class="intro p-2">
-            i can name the release year of basically any major movie ever
-          </h4>
-          <h4 class="intro p-2">
-            i worked at github as its youngest engineering intern this summer.
-          </h4>
-          <h4 class="intro p-2">
-            for my experience and relevant projects/skills, checkout my
-            <span><a href="/resume.pdf">resumé</a></span> (email me for an
-            updated version) or check out my
-            <span><a href="https://github.com/ammarateya">github</a></span> or
-            <span
-              ><a href="https://linkedin.com/in/ammarateya">linkedin</a></span
-            >
-          </h4>
-        </div>
-        <div class="break"></div>
-        <!--Projects Section-->
-        <div class="projects-section">
-          <h2 class="section-title">Projects</h2>
-
-          <div class="project-grid">
-            <!-- Current Projects -->
-            <div class="project-category">
-              <h3>Currently Building</h3>
-
-              <a
-                href="https://github.com/ammarateya/eecs-sheets"
-                class="project-card-link"
-              >
-                <div class="project-card">
-                  <h4>EECS Sheets</h4>
-                  <p>
-                    A collaborative platform for University of Michigan EECS
-                    students to share, preview, and vote on exam preparation
-                    materials.
-                  </p>
-                  <div class="tech-stack">
-                    <span class="tech-tag">Next.js</span>
-                    <span class="tech-tag">MongoDB</span>
-                  </div>
-                </div>
-              </a>
-
-              <a
-                href="https://github.com/ammarateya/vintagelen"
-                class="project-card-link"
-              >
-                <div class="project-card">
-                  <h4>VintageLen</h4>
-                  <p>
-                    Computer vision ML model that scans estate sale listings to
-                    detect film or digital camera bodies, helping photography
-                    enthusiasts find hidden gems.
-                  </p>
-                  <div class="tech-stack">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">YOLOv5</span>
-                  </div>
-                </div>
-              </a>
+          <div>
+            <div class="dict-header">
+              <span class="dict-name">Ammar Ateya</span>
+              <span class="dict-pronunciation">[ˈʕamˌmaːr ʕ*ɑtˤtˤejjæ]</span>
+              <span class="dict-pos">proper noun</span>
             </div>
-
-            <!-- Completed Projects -->
-            <div class="project-category">
-              <h3>Featured Work</h3>
-
-              <a href="/a2-parking" class="project-card-link">
-                <div class="project-card">
-                  <h4>Ann Arbor Parking Citation Tracker</h4>
-                  <p>
-                    A visualization of all parking tickets given in Ann Arbor in
-                    live time.
-                  </p>
-                  <div class="tech-stack">
-                    <span class="tech-tag">Next.js</span>
-                    <span class="tech-tag">Python</span>
-                  </div>
-                </div>
-              </a>
-
-              <a
-                href="https://github.com/ammarateya/petecode"
-                class="project-card-link"
-              >
-                <div class="project-card">
-                  <h4>PeteCode</h4>
-                  <p>AI-powered LeetCode brainrot TikTok generator.</p>
-                  <div class="tech-stack">
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">FastAPI</span>
-                    <span class="tech-tag">Supabase</span>
-                  </div>
-                </div>
-              </a>
-
-              <a
-                href="https://devfolio.co/projects/arise-918b"
-                class="project-card-link"
-              >
-                <div class="project-card">
-                  <h4>ARISE</h4>
-                  <p>
-                    AI Drake raps your medical records in simple, digestible
-                    lyrics.
-                  </p>
-                  <div class="tech-stack">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">React.js</span>
-                    <span class="tech-tag">Supabase</span>
-                  </div>
-                </div>
-              </a>
-              <a
-                href="https://github.com/ammarateya"
-                class="project-card-link more-projects-card"
-              >
-                <div class="project-card">
-                  <div class="more-projects-content">
-                    <i class="bi bi-plus-circle-fill"></i>
-                    <h4>More Projects</h4>
-                    <p>
-                      Check out my GitHub for additional work, or reach out to
-                      learn about my academic projects!
-                    </p>
-                    <div class="cta-links">
-                      <span class="cta-link"
-                        ><i class="bi bi-github"></i> View GitHub</span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </a>
+            <ol class="dict-list">
+              <li class="dict-list-item">
+                <span class="dict-main-text"
+                  >student of cs & linguistics @ umich;</span
+                >
+              </li>
+              <li class="dict-list-item">
+                <span class="dict-main-text">software engineer;</span>
+                <span class="dict-secondary-text">
+                  previously worked at
+                  <a
+                    href="https://github.com/ammarateya"
+                    class="hover-link-gold"
+                    >github</a
+                  >
+                  as its youngest engineering intern.</span
+                >
+              </li>
+              <li class="dict-list-item">
+                <span class="dict-main-text">film enthusiast;</span>
+                <span class="dict-secondary-text">
+                  <a
+                    href="https://letterboxd.com/ammarateya/"
+                    class="hover-link-gold"
+                    >critic</a
+                  >
+                  on nights & weekends.</span
+                >
+              </li>
+              <li class="dict-list-item">
+                <span class="dict-main-text">amateur photographer;</span>
+                <span class="dict-secondary-text"
+                  >spent too much money on
+                  <a
+                    href="https://instagram.com/ammarchivez"
+                    class="hover-link-gold"
+                    >film</a
+                  >.</span
+                >
+              </li>
+            </ol>
+            <div class="dict-example">
+              <span class="dict-example-label">example</span>: "Ammar Ateya has
+              a <a href="/resume.pdf" class="hover-link-gold">resumé.</a>"
             </div>
           </div>
-        </div>
+        </section>
+        <!-- ASCII separator -->
+        <section class="ascii-sep" aria-hidden="true">
+          <pre>
++----------------------------------------------------------------------------------------------+</pre
+          >
+        </section>
+        <!-- References + Interests columns -->
+        <section id="refs-and-interests" class="mt-5">
+          <div class="row g-4">
+            <div class="col-12 col-md-6">
+              <pre class="section-title-ascii">
+╔═══════════╗
+║  P R O J  ║
+║  E  C  T  ║
+║     S     ║
+╚═══════════╝</pre
+              >
+              <div class="section-header-sep"></div>
+              <ol class="reference-list">
+                <li class="ref-item">
+                  <span class="ref-num">[1]</span>
+                  <div class="ref-body">
+                    <a href="/a2-parking" class="reference-link">
+                      Ann Arbor Parking Citation Tracker
+                      <span class="ref-arrow">→</span>
+                    </a>
+                    <span class="ref-blurb"
+                      >live visualization of city parking tickets.</span
+                    >
+                  </div>
+                </li>
+                <li class="ref-item">
+                  <span class="ref-num">[2]</span>
+                  <div class="ref-body">
+                    <a
+                      href="https://github.com/ammarateya/eecs-sheets"
+                      class="reference-link"
+                    >
+                      EECS Sheets <span class="ref-arrow">→</span>
+                    </a>
+                    <span class="ref-blurb"
+                      >collaborative platform for UM EECS exam prep materials.
+                      <em>(in progress)</em></span
+                    >
+                  </div>
+                </li>
+                <li class="ref-item">
+                  <span class="ref-num">[3]</span>
+                  <div class="ref-body">
+                    <a
+                      href="https://github.com/ammarateya/petecode"
+                      class="reference-link"
+                    >
+                      PeteCode <span class="ref-arrow">→</span>
+                    </a>
+                    <span class="ref-blurb"
+                      >AI-powered LeetCode TikTok generator.</span
+                    >
+                  </div>
+                </li>
+                <li class="ref-item">
+                  <span class="ref-num">[4]</span>
+                  <div class="ref-body">
+                    <a
+                      href="https://devfolio.co/projects/arise-918b"
+                      class="reference-link"
+                    >
+                      ARISE <span class="ref-arrow">→</span>
+                    </a>
+                    <span class="ref-blurb"
+                      >medical records summarized as rap lyrics.</span
+                    >
+                  </div>
+                </li>
+                <li class="ref-item">
+                  <span class="ref-num">[5]</span>
+                  <div class="ref-body">
+                    <a
+                      href="https://github.com/ammarateya/vintagelen"
+                      class="reference-link"
+                    >
+                      VintageLen <span class="ref-arrow">→</span>
+                    </a>
+                    <span class="ref-blurb"
+                      >ML model spotting cameras in estate sale listings.
+                      <em>(in progress)</em></span
+                    >
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <div class="col-12 col-md-6">
+              <pre class="section-title-ascii">
+╔════════════╗
+║  I  N  T   ║
+║  E  R  E   ║
+║  S  T  S   ║
+╚════════════╝</pre
+              >
+              <div class="section-header-sep"></div>
+              <ol class="reference-list">
+                <li class="ref-item">
+                  <span class="ref-num">[A]</span>
+                  <div class="ref-body">
+                    <span class="interest-title">Operating Systems</span>
+                    <span class="ref-blurb"
+                      >kernel/user boundaries, schedulers, filesystems.</span
+                    >
+                  </div>
+                </li>
+                <li class="ref-item">
+                  <span class="ref-num">[B]</span>
+                  <div class="ref-body">
+                    <span class="interest-title">Distributed Systems</span>
+                    <span class="ref-blurb"
+                      >consensus, fault tolerance, observability, data
+                      flow.</span
+                    >
+                  </div>
+                </li>
+                <li class="ref-item">
+                  <span class="ref-num">[C]</span>
+                  <div class="ref-body">
+                    <span class="interest-title">ML Infrastructure</span>
+                    <span class="ref-blurb"
+                      >training/serving pipelines, eval, caching, GPUs.</span
+                    >
+                  </div>
+                </li>
+                <li class="ref-item">
+                  <span class="ref-num">[D]</span>
+                  <div class="ref-body">
+                    <span class="interest-title"
+                      >Computational Linguistics</span
+                    >
+                    <span class="ref-blurb"
+                      >morphology, phonology, Arabic NLP, speech.</span
+                    >
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
       </main>
 
       <!-- <footer class="mt-auto">rehaul come soon</footer> -->

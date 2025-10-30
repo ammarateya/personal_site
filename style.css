@@ -370,3 +370,198 @@ footer {
   text-decoration: none;
   transform: scale(1.075);
 }
+
+/* ASCII Banner */
+#ascii-name pre {
+  margin: 0;
+  white-space: pre;
+  line-height: 1.05;
+  font-size: 12px;
+  background: transparent;
+  color: #eaeaea;
+}
+
+/* ASCII Separator */
+.ascii-sep pre {
+  margin: 10px 0 20px;
+  white-space: pre;
+  line-height: 1;
+  font-size: 11px;
+  background: transparent;
+  color: #9e9e9e;
+}
+
+/* Dictionary Preview */
+#dictionary-preview {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.dict-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.dict-name {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.dict-pronunciation {
+  font-style: italic;
+  color: #d6d6d6;
+}
+
+.dict-pos {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 12px;
+  text-transform: lowercase;
+}
+
+.dict-list {
+  margin-top: 12px;
+  margin-bottom: 0;
+  padding-left: 18px;
+}
+
+.dict-list-item {
+  margin-bottom: 8px;
+}
+
+.dict-main-text {
+  color: #f1f1f1;
+}
+
+.dict-secondary-text {
+  color: #cfcfcf;
+}
+
+.dict-example {
+  margin-top: 10px;
+  color: #bdbdbd;
+}
+
+.dict-example-label {
+  font-variant: small-caps;
+  letter-spacing: 0.5px;
+}
+
+/* Link Hover Effects */
+.hover-link-gold {
+  color: #d4af37;
+  text-decoration: none;
+  transition: all 150ms ease;
+}
+
+.hover-link-gold:hover {
+  color: #f4d03f;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+.hover-link-blue {
+  color: #92c5f7;
+  text-decoration: none;
+  transition: all 150ms ease;
+}
+
+.hover-link-blue:hover {
+  color: #c9e1ff;
+  text-shadow: 0 0 8px rgba(146, 197, 247, 0.5);
+}
+
+/* Reference Lists */
+.reference-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.75rem 0 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 0.98rem;
+}
+
+.ref-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.ref-num {
+  opacity: 0.8;
+  min-width: 2ch;
+  text-align: right;
+}
+
+.ref-body {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.reference-link {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.reference-link:hover {
+  text-decoration: underline;
+}
+
+.ref-arrow {
+  opacity: 0.9;
+  transition: transform 120ms ease;
+}
+
+.reference-link:hover .ref-arrow {
+  transform: translateX(2px);
+}
+
+.ref-blurb {
+  color: #bdbdbd;
+  font-style: italic;
+}
+
+/* Section Headers */
+.section-header-sep {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin-bottom: 0.75rem;
+}
+
+.section-title-small {
+  margin-bottom: 0.25rem;
+}
+
+.interest-title {
+  font-weight: 600;
+}
+
+/* Section ASCII Titles */
+.section-title-ascii {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0 0 0.5rem 0;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #eaeaea;
+}
+
+/* Avatar in dictionary section */
+.avatar-dict {
+  width: 50%;
+  height: auto;
+  max-width: 100%;
+  aspect-ratio: auto;
+  border-radius: 0;
+  border: 3px solid white;
+  object-fit: cover;
+  object-position: center;
+}
