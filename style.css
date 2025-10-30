@@ -4,6 +4,16 @@ body {
   color: antiquewhite;
 }
 
+::selection {
+  background-color: #d4af37;
+  color: #23272f;
+}
+
+::-moz-selection {
+  background-color: #d4af37;
+  color: #23272f;
+}
+
 .nav {
   flex: row;
 }
@@ -464,14 +474,14 @@ footer {
 }
 
 .hover-link-blue {
-  color: #92c5f7;
+  color: #f0a500;
   text-decoration: none;
   transition: all 150ms ease;
 }
 
 .hover-link-blue:hover {
-  color: #c9e1ff;
-  text-shadow: 0 0 8px rgba(146, 197, 247, 0.5);
+  color: #ffc947;
+  text-shadow: 0 0 8px rgba(240, 165, 0, 0.5);
 }
 
 /* Reference Lists */
