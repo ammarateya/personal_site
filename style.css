@@ -23,6 +23,20 @@ body {
   font-size: 1.5em;
 }
 
+.nav-icon-img {
+  height: 22px;
+  margin-top: 6px;
+  width: auto;
+  display: block;
+  filter: invert(100%) saturate(0%) brightness(125%);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.nav-link:hover .nav-icon-img {
+  transform: translateY(-1px);
+  filter: invert(100%) saturate(0%) brightness(150%);
+}
+
 .nav-link:hover {
   cursor: pointer;
   color: #e56fff;
