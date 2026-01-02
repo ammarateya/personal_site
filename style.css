@@ -395,15 +395,36 @@ footer {
   transform: scale(1.075);
 }
 
-/* ASCII Banner */
-#ascii-name pre {
-  margin: 0;
-  white-space: pre;
-  line-height: 1.05;
-  font-size: 12px;
-  background: transparent;
-  color: #eaeaea;
-  overflow-x: hidden;
+
+/* Main Name Heading */
+.hero-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  color: #eaeaea; 
+  letter-spacing: -2px;
+  line-height: 1.1;
+  text-transform: lowercase;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments for the hero title */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
 }
 
 /* ASCII Separator */
