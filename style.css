@@ -564,20 +564,12 @@ footer {
 
 /* Serif Titles (Projects & Interests) */
 .section-serif-title {
-  /* Matching dict-name styles */
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  /* Retaining color and spacing preferences */
-  color: #eaeaea;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #e0e0e0;
   margin-bottom: 0.5rem;
-  /* Box styling */
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  background: rgba(255, 255, 255, 0.05);
-  text-transform: uppercase;
 }
 
 /* Avatar in dictionary section */
@@ -590,4 +582,12 @@ footer {
   border: 3px solid white;
   object-fit: cover;
   object-position: center;
+}
+
+.dict-image-caption {
+  font-size: 0.85rem;
+  color: #a0a0a0;
+  font-style: italic;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
